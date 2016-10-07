@@ -10,9 +10,51 @@ function main(){
 	vous pouvez biensur créer d'autres fonctions si nécessaire
 	*/
 
+
+// var prenom = "rudy";
+
+// var nom = "booko-lengo";
+
+
+// var nomComplet = prenom +" "+  nom;
+
+// console.log(nomComplet);
+
+// /
+
+
+
+
+
 	// 1. placez un listener sur le click des éléments <button>
-	// 2. dans le callback récupérez le data attribute animal
-	// 3. récupérerez dans l'objet species la valeur correspond à l'attribut récupéré
+     // 2. dans le callback récupérez le data attribute animal
+
+$(".ui button").click(function() {
+
+	var chocolat= $(this).data("animal");
+	var foo=species[chocolat];
+
+	$("img").attr("src","img/"+foo);
+
+
+
+
+
+	
+
+
+
+
+
+	
+}); 
+ 
+
+// 3. récupérerez dans l'objet species la valeur correspond à l'attribut récupéré
+
+
+
+
 	// 4. ajoutez élément img en assignant à son attibut src la valeur précédemment récupérée
 	// 5. inserez cet élément dans l'élément ayant l'id holder
 	// 
